@@ -1,48 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact page</title>
 
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact TechCon</title>
+</head>
+
+<body>
     <header>
-      <h1>Contact Us</h1>
-      <nav>
-          <ul>
-            <li><a href="/about.html">About page</a></li>
-            <li><a href="/schedule.html">Schedule page</a></li>
-            <li><a href="/Register.html">Register here</a></li>
-            <li><a href="/contact.html">Contact us</a></li>
-          </ul>
+        <nav>
+            <ul>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="schedule.html">Schedule</a>
+                <a href="register.html">Register</a>
+                <a href="contact.html">Contact</a>
+            </ul>
         </nav>
+        <h1>Contact Us</h1>
     </header>
+
     <main>
-        <a href="info@techconpartners.com.au">EMAIL ADDRESS</a>
-        <br>
-        <a href="https://facebook.com/techcon"> <i class="uil uil-facebook"></i></a>
+        <h2>Contact Detils</h2>
+        <p>Email Address: <a href="mailto:info@conference.com">TechCon@conference.com</a></p>
 
-        <br>
-        <a href="https://instagram.com/techcon"> <i class="uil uil-instagram"></i></a>
-        <br>
-        <a href="https://twitter.com/techcon"> <i class="uil uil-twitter"></i></a>
-        <br>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.282087217705!2d-117.17304972603281!3d32.75824878494788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9552b8181e809%3A0xaa37eaafb2cf7e08!2sLegacy%20Resort%20Hotel%20%26%20Spa!5e0!3m2!1sen!2sng!4v1719178763885!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <br>
-        <h2>CONTACT US</h2>
-        <form action="/submit-form" method="post">
-            <label for="username">Full name (4-8 characters):</label>
-            <input type="text" id="username" name="username" required minlength="4" maxlength="8" placeholder="Username">
-        
+
+        <h3>Social Media Links</h3>
+        <a href="https://www.facebook.com/TechCon" target="_blank"><img src="facebook (1).png" alt="Facebook"></a>
+        <a href="https://twitter.com/TechCon" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+        <a href="https://www.linkedin.com/company/TechCon" target="_blank"><img src="linkedin (1).png"
+                alt="LinkedIn"></a>
+        <a href="https://www.quora.com/TechCon" target="_blank"><img src="quora.png" alt="Quora"></a>
+
+
+        <iframe src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=Nairobi+Kenya" allowfullscreen>
+        </iframe>
+
+        <h2>Contact</h2>
+        <form action="submit" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required placeholder="example@domain.com">
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
 
-            <label for="message">message</label>
-            <input type="textarea" id="password" name="textarea" required placeholder="textarea">
-            <button type="submit">Submit</button>
-</main> 
-<footer><p>&copy; 2024 Techcon website. All rights reserved.</p></footer> 
-  </body>
+    <footer>
+        <p>&copy;2024 TechCon copyright</p>
+    </footer>
+</body>
 
+</html>
